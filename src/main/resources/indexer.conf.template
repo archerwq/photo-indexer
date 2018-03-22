@@ -1,0 +1,16 @@
+# directories where the photo resides in, seperated with commas
+photo.dirs=/Users/qiangwang/Pictures/huawei_phone_bkup/camera
+photo.dirs=/Users/qiangwang/Desktop/photo/
+
+# ElasticSearch connection URL
+es.url=http://localhost:9200
+
+# last UGI update time
+ugi.ts.path=/Users/qiangwang/dev/java_workspace/photo-indexer/src/main/resources/ugi.ts
+
+# db
+db.url=jdbc:mysql://127.0.0.1:3306/photo?useUnicode=true&characterEncoding=UTF-8
+db.username=qwang
+db.password=qwer1234
+db.conn.min.idle=5
+db.conn.max.idle=10

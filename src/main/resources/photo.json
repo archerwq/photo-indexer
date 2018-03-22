@@ -1,0 +1,34 @@
+{
+	"photo": {
+		"properties": {
+			"sha1": {
+				"type": "text"
+			},
+			"path": {
+				"type": "text"
+			},
+			"time": {
+				"type": "date",
+				"format": "strict_date_optional_time||epoch_millis"
+			},
+			"width": {
+				"type": "long"
+			},
+			"length": {
+				"type": "long"
+			},
+			"location": {
+				"type": "geo_point"
+			},
+			"type": {
+				"type": "text"
+			},
+			"story": {
+				"type": "text"
+			},
+			"tags": {
+				"type": "text"
+			}
+		}
+	}
+}

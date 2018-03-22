@@ -1,0 +1,16 @@
+# maven ignore
+target/
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+**/*.cpgz
+*.swp
+**/.DS_Store

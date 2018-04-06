@@ -39,6 +39,12 @@ public class MetaIndexTask {
 			}
 			LOGGER.info(f.getAbsolutePath());
 			try {
+				// ignore hidden file
+				String name = f.getName();
+				if (name.startsWith(".")) {
+					continue;
+				}
+
 				String path = f.getAbsolutePath();
 				PhotoMeta photo = PhotoMeta.load(path);
 				String indexedPath = dao.metaIndexed(photo.getSha1());

@@ -133,9 +133,13 @@ public class EsIndexer {
 	 */
 	public void addPhotoUgi(String sha1, String[] tags, String story) throws IOException {
 		Preconditions.checkArgument(!StringUtils.isBlank(sha1));
-		Preconditions.checkArgument(tags != null && tags.length > 0);
+		if (tags == null) {
+			tags = new String[] {};
+		}
+		if (story == null) {
+			story = "";
+		}
 		LOGGER.info("add ugi for a photo: {}, {}, {}", sha1, tags, story);
-		Preconditions.checkArgument(!StringUtils.isBlank(story));
 
 		UpdateRequest request = new UpdateRequest("files", "photo", sha1);
 		Map<String, Object> parameters = new HashMap<>();

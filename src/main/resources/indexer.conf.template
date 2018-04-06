@@ -1,6 +1,6 @@
 # directories where the photo resides in, seperated with commas
-photo.dirs=/Users/qiangwang/Pictures/huawei_phone_bkup/camera
-photo.dirs=/Users/qiangwang/Desktop/photo/
+photo.dirs=/Volumes/Seagate Bac/image
+photo.dirs=/Users/qiangwang/Pictures/huawei_phone_bkup
 
 # ElasticSearch connection URL
 es.url=http://localhost:9200
